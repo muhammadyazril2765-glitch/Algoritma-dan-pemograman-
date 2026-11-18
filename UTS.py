@@ -4,17 +4,17 @@
 nama_barang = input("Masukkan nama barang: ")
 stok = int(input("Masukkan jumlah stok awal: "))
 
-# 5. Perulangan agar transaksi bisa dilakukan berkali-kali
+# 2. Perulangan agar transaksi bisa dilakukan berkali-kali
 while True:
     print("\n=== MENU TRANSAKSI ===")
     print("1. Barang Masuk")
     print("2. Barang Keluar")
     print("3. Selesai")
 
-    # 2. Pilih transaksi
+    # 3. Pilih transaksi
     pilihan = input("Pilih transaksi (1/2/3): ")
 
-    # 3. Proses transaksi dengan percabangan
+    # 4. Proses transaksi dengan percabangan
     if pilihan == "1":
         jumlah = int(input("Jumlah barang masuk: "))
         stok = stok + jumlah
@@ -23,7 +23,7 @@ while True:
     elif pilihan == "2":
         jumlah = int(input("Jumlah barang keluar: "))
 
-        # 4. Percabangan untuk cek ketersediaan stok
+        # 5. Percabangan untuk cek ketersediaan stok
         if jumlah > stok:
             print("Stok Tidak Mencukupi")
         else:
